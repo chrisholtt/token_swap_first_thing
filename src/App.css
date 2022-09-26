@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 7vh;
+  background: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-btn{
+  width: 140px;
+  height: 40px;
+  border-radius: 50px;
+  background: purple;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-bg {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(131,58,180);
+ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(20,76,150,1) 100%);
+}
+
+.swap-modal{
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+width: 800px;
+height: 500px;
+padding: 10px;
+background: rgba(255, 255, 255, 0.01);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
-.App-link {
-  color: #61dafb;
+.swap-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.05);
+  height: 80px;
+  border-radius: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swap-box input {
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.token{
+  border-radius: 16px;
+  display: flex;
+  width: 80%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.token:hover {
+  background: rgb(228, 228, 228);
+}
+
+.token-dropdown {
+  width: 100px;
+  height: 60px;
+  border-radius: 16px;
+  /* background: red; */
+  box-shadow: 4px 4px 10px #24242454;
+}
+
+.token-nodes{
+  height: 80%;
+  overflow: scroll;
 }
